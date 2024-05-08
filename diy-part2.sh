@@ -19,7 +19,7 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generat
 #=========================================================================================================
-        cd openwrt
+        #cd openwrt
         # 添加的 feeds 应用包优先于自带的 feed 里的 app
         echo "重复的包检测：👇"
         ./scripts/feeds list  | awk '{if(a[$1]){print $1}else{a[$1]++}}'
