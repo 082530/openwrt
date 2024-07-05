@@ -1942,9 +1942,9 @@ CONFIG_PACKAGE_ipv6helper=y
 # CONFIG_PACKAGE_jose is not set
 CONFIG_PACKAGE_libiwinfo-data=y
 # CONFIG_PACKAGE_libjose is not set
-CONFIG_PACKAGE_nginx=y
+# CONFIG_PACKAGE_nginx is not set
 # CONFIG_PACKAGE_nginx-mod-luci-ssl is not set
-CONFIG_PACKAGE_nginx-util=y
+# CONFIG_PACKAGE_nginx-util is not set
 # CONFIG_PACKAGE_tang is not set
 # end of Extra packages
 
@@ -5038,7 +5038,7 @@ CONFIG_ZLIB_OPTIMIZE_SPEED=y
 # 1. Collections
 #
 CONFIG_PACKAGE_luci=y
-CONFIG_PACKAGE_luci-nginx=y
+# CONFIG_PACKAGE_luci-nginx is not set
 # CONFIG_PACKAGE_luci-ssl-nginx is not set
 # CONFIG_PACKAGE_luci-ssl-openssl is not set
 # end of 1. Collections
@@ -5112,7 +5112,7 @@ CONFIG_PACKAGE_luci-mod-admin-full=y
 # CONFIG_PACKAGE_luci-app-asterisk is not set
 # CONFIG_PACKAGE_luci-app-atinout is not set
 # CONFIG_PACKAGE_luci-app-attendedsysupgrade is not set
-# CONFIG_PACKAGE_luci-app-autoreboot is not set
+CONFIG_PACKAGE_luci-app-autoreboot=y
 # CONFIG_PACKAGE_luci-app-autotimeset is not set
 # CONFIG_PACKAGE_luci-app-baidupcs-web is not set
 # CONFIG_PACKAGE_luci-app-bcp38 is not set
@@ -5148,9 +5148,9 @@ CONFIG_PACKAGE_luci-app-ddns=y
 # CONFIG_PACKAGE_luci-app-e2guardian is not set
 # CONFIG_PACKAGE_luci-app-easymesh is not set
 CONFIG_PACKAGE_luci-app-eqos=y
-# CONFIG_PACKAGE_luci-app-fileassistant is not set
-# CONFIG_PACKAGE_luci-app-filebrowser is not set
-# CONFIG_PACKAGE_luci-app-filetransfer is not set
+CONFIG_PACKAGE_luci-app-fileassistant=y
+CONFIG_PACKAGE_luci-app-filebrowser=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-frpc=y
 # CONFIG_PACKAGE_luci-app-frps is not set
@@ -5185,7 +5185,7 @@ CONFIG_PACKAGE_luci-app-music-remote-center=y
 # CONFIG_PACKAGE_luci-app-mwan3 is not set
 # CONFIG_PACKAGE_luci-app-mwan3helper is not set
 # CONFIG_PACKAGE_luci-app-n2n is not set
-# CONFIG_PACKAGE_luci-app-netdata is not set
+CONFIG_PACKAGE_luci-app-netdata=y
 # CONFIG_PACKAGE_luci-app-netspeedtest is not set
 # CONFIG_PACKAGE_luci-app-nezha-agent is not set
 # CONFIG_PACKAGE_luci-app-nfs is not set
@@ -5230,7 +5230,7 @@ CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_IPv6_Nat=y
 # CONFIG_PACKAGE_luci-app-pushbot is not set
 # CONFIG_PACKAGE_luci-app-qbittorrent is not set
 CONFIG_PACKAGE_luci-app-qbittorrent_dynamic=y
-# CONFIG_PACKAGE_luci-app-qos is not set
+CONFIG_PACKAGE_luci-app-qos=y
 # CONFIG_PACKAGE_luci-app-radicale is not set
 # CONFIG_PACKAGE_luci-app-ramfree is not set
 # CONFIG_PACKAGE_luci-app-rclone is not set
@@ -5252,7 +5252,7 @@ CONFIG_PACKAGE_luci-app-socat=y
 # CONFIG_PACKAGE_luci-app-softethervpn is not set
 # CONFIG_PACKAGE_luci-app-spdmodem is not set
 # CONFIG_PACKAGE_luci-app-splash is not set
-# CONFIG_PACKAGE_luci-app-sqm is not set
+CONFIG_PACKAGE_luci-app-sqm=y
 # CONFIG_PACKAGE_luci-app-squid is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_libustream-mbedtls is not set
@@ -5304,7 +5304,7 @@ CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY=y
 # CONFIG_PACKAGE_luci-app-uhttpd is not set
 CONFIG_PACKAGE_luci-app-unblockmusic=y
 # CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go is not set
-# CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS is not set
+CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS=y
 CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
 # CONFIG_PACKAGE_luci-app-unblockneteasemusic-2102 is not set
 # CONFIG_PACKAGE_luci-app-unblockneteasemusic-go is not set
@@ -5315,7 +5315,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 # CONFIG_PACKAGE_luci-app-usbmodem is not set
 # CONFIG_PACKAGE_luci-app-uugamebooster is not set
 # CONFIG_PACKAGE_luci-app-v2ray-server is not set
-# CONFIG_PACKAGE_luci-app-v2raya is not set
+CONFIG_PACKAGE_luci-app-v2raya=y
 # CONFIG_PACKAGE_luci-app-verysync is not set
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 # CONFIG_PACKAGE_luci-app-vnstat is not set
@@ -5331,7 +5331,7 @@ CONFIG_PACKAGE_luci-app-wifischedule=y
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
 # CONFIG_PACKAGE_luci-app-xlnetacc is not set
 # CONFIG_PACKAGE_luci-app-zerotier is not set
-CONFIG_PACKAGE_luci-nginxer=y
+# CONFIG_PACKAGE_luci-nginxer is not set
 # end of 3. Applications
 
 #
@@ -5403,6 +5403,7 @@ CONFIG_PACKAGE_luci-lib-xterm=y
 # end of 6. Libraries
 
 CONFIG_PACKAGE_default-settings=y
+CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-base-ca is not set
 # CONFIG_PACKAGE_luci-i18n-base-cs is not set
 # CONFIG_PACKAGE_luci-i18n-base-de is not set
@@ -5459,6 +5460,8 @@ CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-ddns-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-eqos-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-filebrowser-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-firewall-ca is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-cs is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-de is not set
@@ -5487,6 +5490,7 @@ CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-firewall-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-music-remote-center-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-nlbwmon-ja is not set
 # CONFIG_PACKAGE_luci-i18n-nlbwmon-ru is not set
 CONFIG_PACKAGE_luci-i18n-nlbwmon-zh-cn=y
@@ -5515,8 +5519,65 @@ CONFIG_PACKAGE_luci-i18n-nlbwmon-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-olsr-vi is not set
 CONFIG_PACKAGE_luci-i18n-olsr-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-olsr-zh-tw is not set
+# CONFIG_PACKAGE_luci-i18n-qos-ca is not set
+# CONFIG_PACKAGE_luci-i18n-qos-cs is not set
+# CONFIG_PACKAGE_luci-i18n-qos-de is not set
+# CONFIG_PACKAGE_luci-i18n-qos-el is not set
+# CONFIG_PACKAGE_luci-i18n-qos-en is not set
+# CONFIG_PACKAGE_luci-i18n-qos-es is not set
+# CONFIG_PACKAGE_luci-i18n-qos-fr is not set
+# CONFIG_PACKAGE_luci-i18n-qos-he is not set
+# CONFIG_PACKAGE_luci-i18n-qos-hu is not set
+# CONFIG_PACKAGE_luci-i18n-qos-it is not set
+# CONFIG_PACKAGE_luci-i18n-qos-ja is not set
+# CONFIG_PACKAGE_luci-i18n-qos-ms is not set
+# CONFIG_PACKAGE_luci-i18n-qos-no is not set
+# CONFIG_PACKAGE_luci-i18n-qos-pl is not set
+# CONFIG_PACKAGE_luci-i18n-qos-pt is not set
+# CONFIG_PACKAGE_luci-i18n-qos-pt-br is not set
+# CONFIG_PACKAGE_luci-i18n-qos-ro is not set
+# CONFIG_PACKAGE_luci-i18n-qos-ru is not set
+# CONFIG_PACKAGE_luci-i18n-qos-sk is not set
+# CONFIG_PACKAGE_luci-i18n-qos-sv is not set
+# CONFIG_PACKAGE_luci-i18n-qos-tr is not set
+# CONFIG_PACKAGE_luci-i18n-qos-uk is not set
+# CONFIG_PACKAGE_luci-i18n-qos-vi is not set
+CONFIG_PACKAGE_luci-i18n-qos-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-qos-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-socat-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-sqm-ar is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-bg is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-bn_BD is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-ca is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-cs is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-de is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-el is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-en is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-es is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-fi is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-fr is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-he is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-hi is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-hu is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-it is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-ja is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-ko is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-mr is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-ms is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-nb_NO is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-pl is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-pt is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-pt_BR is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-ro is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-ru is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-sk is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-sv is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-tr is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-uk is not set
+# CONFIG_PACKAGE_luci-i18n-sqm-vi is not set
+CONFIG_PACKAGE_luci-i18n-sqm-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-sqm-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-turboacc-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
@@ -5545,6 +5606,7 @@ CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-vi is not set
 CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-zh-tw is not set
+# CONFIG_PACKAGE_luci-i18n-v2raya-zh_Hans is not set
 CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-watchcat-ca is not set
@@ -6386,59 +6448,9 @@ CONFIG_PACKAGE_frpc=y
 CONFIG_PACKAGE_microsocks=y
 # CONFIG_PACKAGE_naiveproxy is not set
 # CONFIG_PACKAGE_nginx-all-module is not set
-CONFIG_PACKAGE_nginx-mod-luci=y
-CONFIG_PACKAGE_nginx-ssl=y
-
-#
-# Configuration
-#
-# CONFIG_NGINX_DAV is not set
-CONFIG_NGINX_UBUS=y
-# CONFIG_NGINX_FLV is not set
-# CONFIG_NGINX_STUB_STATUS is not set
-CONFIG_NGINX_HTTP_CHARSET=y
-CONFIG_NGINX_HTTP_GZIP=y
-CONFIG_NGINX_HTTP_GZIP_STATIC=y
-CONFIG_NGINX_HTTP_SSI=y
-CONFIG_NGINX_HTTP_USERID=y
-CONFIG_NGINX_HTTP_ACCESS=y
-CONFIG_NGINX_HTTP_AUTH_BASIC=y
-# CONFIG_NGINX_HTTP_AUTH_REQUEST is not set
-CONFIG_NGINX_HTTP_AUTOINDEX=y
-CONFIG_NGINX_HTTP_GEO=y
-CONFIG_NGINX_HTTP_MAP=y
-CONFIG_NGINX_HTTP_SPLIT_CLIENTS=y
-CONFIG_NGINX_HTTP_REFERER=y
-CONFIG_NGINX_HTTP_REWRITE=y
-CONFIG_NGINX_HTTP_PROXY=y
-CONFIG_NGINX_HTTP_FASTCGI=y
-CONFIG_NGINX_HTTP_UWSGI=y
-CONFIG_NGINX_HTTP_SCGI=y
-CONFIG_NGINX_HTTP_MEMCACHED=y
-CONFIG_NGINX_HTTP_LIMIT_CONN=y
-CONFIG_NGINX_HTTP_LIMIT_REQ=y
-CONFIG_NGINX_HTTP_EMPTY_GIF=y
-CONFIG_NGINX_HTTP_BROWSER=y
-CONFIG_NGINX_HTTP_UPSTREAM_HASH=y
-CONFIG_NGINX_HTTP_UPSTREAM_IP_HASH=y
-CONFIG_NGINX_HTTP_UPSTREAM_LEAST_CONN=y
-CONFIG_NGINX_HTTP_UPSTREAM_KEEPALIVE=y
-CONFIG_NGINX_HTTP_CACHE=y
-CONFIG_NGINX_HTTP_V2=y
-CONFIG_NGINX_PCRE=y
-CONFIG_NGINX_NAXSI=y
-# CONFIG_NGINX_LUA is not set
-# CONFIG_NGINX_HTTP_REAL_IP is not set
-# CONFIG_NGINX_HTTP_SECURE_LINK is not set
-# CONFIG_NGINX_HTTP_SUB is not set
-CONFIG_NGINX_HEADERS_MORE=y
-# CONFIG_NGINX_HTTP_BROTLI is not set
-# CONFIG_NGINX_STREAM_CORE_MODULE is not set
-# CONFIG_NGINX_RTMP_MODULE is not set
-# CONFIG_NGINX_TS_MODULE is not set
-# end of Configuration
-
-CONFIG_PACKAGE_nginx-ssl-util=y
+# CONFIG_PACKAGE_nginx-mod-luci is not set
+# CONFIG_PACKAGE_nginx-ssl is not set
+# CONFIG_PACKAGE_nginx-ssl-util is not set
 # CONFIG_PACKAGE_nginx-ssl-util-nopcre is not set
 # CONFIG_PACKAGE_phtunnel is not set
 # CONFIG_PACKAGE_polipo is not set
@@ -6474,12 +6486,7 @@ CONFIG_PACKAGE_uhttpd=y
 # CONFIG_PACKAGE_uhttpd-mod-lua is not set
 CONFIG_PACKAGE_uhttpd-mod-ubus=y
 # CONFIG_PACKAGE_uhttpd-mod-ucode is not set
-CONFIG_PACKAGE_uwsgi=y
-CONFIG_PACKAGE_uwsgi-cgi-plugin=y
-# CONFIG_PACKAGE_uwsgi-logfile-plugin is not set
-CONFIG_PACKAGE_uwsgi-luci-support=y
-# CONFIG_PACKAGE_uwsgi-python3-plugin is not set
-CONFIG_PACKAGE_uwsgi-syslog-plugin=y
+# CONFIG_PACKAGE_uwsgi is not set
 # CONFIG_PACKAGE_v2ray-plugin is not set
 CONFIG_PACKAGE_v2raya=y
 # CONFIG_PACKAGE_xfrpc is not set
